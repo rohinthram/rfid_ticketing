@@ -1,0 +1,82 @@
+.bg {
+    padding: 2% 2% 2% 2%;
+    border-radius: 15px;
+    border: none;
+    position: fixed;
+    margin-left: 30%;
+    box-shadow:  0 3px  rgb(0, 0, 0);
+    background-color: rgb(197, 243, 255);
+    
+    color: black;
+    height: 80%;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-form{
+    margin-left: 10%;
+    border: 0;
+    outline: none;
+    font-size: x-large;
+}
+
+.dashboard{
+    background-color: rgb(114, 232, 248);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.details{
+    margin-left: 1%;
+    margin-right: 40%;
+    background-color: rgb(107, 245, 176);
+    position: fixed;    
+    width: 30%;
+    height: 100%;
+    border-radius: 3px;
+    align-items: center;
+}
+
+.stats{
+    margin-left: 35%;
+    margin-top: 30%;
+    background-color: rgb(5, 236, 63);
+    position: fixed;
+    width: 30%;
+    height: 50%;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.finance{
+    margin-left: 35%;
+    background-color: rgb(241, 245, 248);
+    color: rgb(241, 19, 11);
+    position: fixed;
+    margin-top: 10%;
+    width: 30%;
+    height: 20%;
+    border-radius: 3px;
+}
+
+.block{
+    margin-left: 75%;
+    background-color: rgb(241, 245, 248);
+    color: rgb(241, 19, 11);
+    position: fixed;
+    margin-top: 30%;
+    width: 30%;
+    height: 20%;
+    border-radius: 3px;
+}
+
+.yaathra{
+    margin-left: 50%;
+    color: rgb(241, 19, 11);
+    position: fixed;
+    border-radius: 3px;
+    z-index: 100;
+}

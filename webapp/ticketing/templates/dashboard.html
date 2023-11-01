@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="dashboard">
+    <div class="details">
+        <h1>User Details</h1>
+        {{user.username}} <br/>
+        {{user.mail}} <br/>
+        {{user.mobile}} <br/>
+        {{user.on_board}} <br/>
+        {{user.tag_id}} <br/>
+    </div>
+
+    <div class="stats">
+        {% if user.on_board %}
+            <h2>You're On Board !!!</h2>
+        {% else %}
+            <h2>You're Not on Board !!!</h2>
+        {% endif %}
+
+        <h1>Transaction History</h1>
+        
+        {% for i in txn %}
+            <div>
+                <b>{{ i.bus_no }}</b><br/>
+                {{ i.b_in }} : {{ i.b_out }} <br/>
+                Fare : {{ i.charge }}
+            </div><br/>
+        {% endfor %}
+
+    </div>
+
+    <div class="yaathra">
+        <h1>Yaathra !</h1>
+    </div>
+
+    <div class="finance">
+        <!--Amount Section-->
+
+        <h2>
+            Balance : <b>{{ user.amt }}</b> <br/>
+        </h2>
+
+        <!--
+        <h4><a href="url_for('load_money')">Load Money</a></h4>-->
+
+    </div>
+
+    <div class="block">
+        {% if user.is_blocked %}
+            <a href="{{ url_for('block_tag') }}">Activate your Tag</a>
+        {% else %}
+            <a href="{{ url_for('block_tag') }}">Block your Tag</a>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock body %}
+</body></html>

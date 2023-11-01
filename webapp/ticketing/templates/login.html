@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="bg">
+    <form action="" method="post" class="bg-form">
+        {{ form.hidden_tag() }}
+
+        {{ form.email(placeholder='Email-ID ')}}
+        <br/><br/>
+        {{ form.password(placeholder='Password')}}
+        <br/><br/>
+        {{ form.submit }}
+    </form>
+
+    <h3> Not Having Account ? <a href="{{ url_for('sign_up') }}">Create One</a></h3>
+    <h3><a href="{{ url_for('forget_password') }}"> Forgot Password ? </a></h3>
+</div>
+{% endblock body %}
