@@ -30,7 +30,7 @@ This repository contains the project files for
     - ESP32 interfaced with RFID reader and LCD display and a servo motor to mimic the gate/door
 - Python: to manage the user and backend processing related to ticketing; Using flask framework
 - Hosted using pythonanywhere.com
-- More technical hints at [aksldfj](tech_readme.md)
+- More technical hints at [tech_readme.md](tech_readme.md)
 
 ## Future Work
 - Updating location dynamicallys
